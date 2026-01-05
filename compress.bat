@@ -6,7 +6,14 @@ set OUTPUT=compressed.pdf
 
 gswin64c -sDEVICE=pdfwrite ^
 -dCompatibilityLevel=1.4 ^
--dPDFSETTINGS=/screen ^
+-dDownsampleColorImages=true ^
+-dDownsampleGrayImages=true ^
+-dDownsampleMonoImages=true ^
+-dColorImageResolution=120 ^
+-dGrayImageResolution=120 ^
+-dMonoImageResolution=300 ^
+-dColorImageDownsampleType=/Bicubic ^
+-dGrayImageDownsampleType=/Bicubic ^
 -dNOPAUSE -dBATCH ^
 -sOutputFile=%OUTPUT% %INPUT%
 
