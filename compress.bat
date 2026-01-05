@@ -6,7 +6,7 @@ set OUTPUT=compressed.pdf
 
 gswin64c -sDEVICE=pdfwrite ^
 -dCompatibilityLevel=1.4 ^
--dPDFSETTINGS=/ebook ^
+-dPDFSETTINGS=/screen ^
 -dNOPAUSE -dBATCH ^
 -sOutputFile=%OUTPUT% %INPUT%
 
