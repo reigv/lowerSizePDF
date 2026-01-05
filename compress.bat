@@ -1,14 +1,14 @@
 @echo off
-REM PDF Compressing using Ghostsript
+REM PDF Compressing using Ghostscript
 
 set INPUT=input.pdf
 set OUTPUT=compressed.pdf
 
-gswin64 -sDEVICE=pdfwrite ^
+gswin64c -sDEVICE=pdfwrite ^
 -dCompatibilityLevel=1.4 ^
 -dPDFSETTINGS=/ebook ^
 -dNOPAUSE -dBATCH ^
--sOutputfile=%OUTPUT% %INPUT%
+-sOutputFile=%OUTPUT% %INPUT%
 
 echo Compression complete!
 pause
